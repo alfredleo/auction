@@ -1,7 +1,5 @@
-FROM nginx:1.17-alpine
+FROM nginx:stable-alpine
 
 COPY ./conf.d /etc/nginx/conf.d
 
-WORKDIR /app
-
-COPY site/public ./public
+WORKDIR /app/public
