@@ -15,8 +15,8 @@ services:
     volumes:
       - ./api:/app
     depends_on:
-      - php-fpm
-  php-fpm:
+      - api-php-fpm
+  api-php-fpm:
     build:
       context: api/docker/development/php-fpm
     volumes:
