@@ -2,4 +2,4 @@ FROM nginx:stable-alpine
 
 COPY ./conf.d /etc/nginx/conf.d
 
-WORKDIR /app/public
+WORKDIR /app
