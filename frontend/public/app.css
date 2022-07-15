@@ -1,0 +1,11 @@
+body {
+    background-color: #f6f6f6;
+    font-family: Arial, sans-serif;
+}
+
+.app {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
