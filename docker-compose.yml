@@ -1,16 +1,9 @@
-version: '3'
+version: '3.7'
 services:
-  nginx:
-    build: 
-      context: site/docker/development/nginx
+  frontend:
+    build:
+      context: frontend/docker/development/nginx
     ports:
       - "8080:80"
     volumes:
-      - ./site:/app
-    depends_on:
-      - php-fpm
-  php-fpm:
-    build:
-      context: site/docker/development/php-fpm
-    volumes:
-        - ./site:/app
+      - ./frontend:/app
